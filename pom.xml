@@ -11,7 +11,7 @@
     <packaging>jar</packaging>
     <groupId>org.webjars</groupId>
     <artifactId>angular-formly</artifactId>
-    <version>6.16.1-SNAPSHOT</version>
+    <version>6.16.1</version>
     <name>angular-formly</name>
     <description>WebJar for angular-formly</description>
     <url>http://webjars.org</url>
@@ -37,7 +37,7 @@
         <developer>
             <id>wayis</id>
             <name>Luc LABBE</name>
-            <email></email>
+            <email />
         </developer>
     </developers>
 
@@ -53,7 +53,7 @@
         <url>http://github.com/webjars/angular-formly</url>
         <connection>scm:git:https://github.com/webjars/angular-formly.git</connection>
         <developerConnection>scm:git:https://github.com/webjars/angular-formly.git</developerConnection>
-        <tag>HEAD</tag>
+        <tag>angular-formly-6.16.1</tag>
     </scm>
 
     <dependencies>
@@ -76,13 +76,13 @@
                         <goals><goal>run</goal></goals>
                         <configuration>
                             <target>
-                                <echo message="download archive"/>
-                                <get src="${upstream.url}" dest="${project.build.directory}/${project.artifactId}.zip"/>
-                                <echo message="unzip archive"/>
-                                <unzip src="${project.build.directory}/${project.artifactId}.zip" dest="${project.build.directory}"/>
-                                <echo message="moving resources"/>
+                                <echo message="download archive" />
+                                <get src="${upstream.url}" dest="${project.build.directory}/${project.artifactId}.zip" />
+                                <echo message="unzip archive" />
+                                <unzip src="${project.build.directory}/${project.artifactId}.zip" dest="${project.build.directory}" />
+                                <echo message="moving resources" />
                                 <move todir="${destDir}">
-                                    <fileset dir="${project.build.directory}/${project.artifactId}-${upstream.version}/dist"/>
+                                    <fileset dir="${project.build.directory}/${project.artifactId}-${upstream.version}/dist" />
                                 </move>
                             </target>
                         </configuration>
