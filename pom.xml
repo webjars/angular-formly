@@ -11,7 +11,7 @@
     <packaging>jar</packaging>
     <groupId>org.webjars</groupId>
     <artifactId>angular-formly</artifactId>
-    <version>6.16.1</version>
+    <version>6.16.2-SNAPSHOT</version>
     <name>angular-formly</name>
     <description>WebJar for angular-formly</description>
     <url>http://webjars.org</url>
@@ -53,7 +53,7 @@
         <url>http://github.com/webjars/angular-formly</url>
         <connection>scm:git:https://github.com/webjars/angular-formly.git</connection>
         <developerConnection>scm:git:https://github.com/webjars/angular-formly.git</developerConnection>
-        <tag>angular-formly-6.16.1</tag>
+        <tag>HEAD</tag>
     </scm>
 
     <dependencies>
